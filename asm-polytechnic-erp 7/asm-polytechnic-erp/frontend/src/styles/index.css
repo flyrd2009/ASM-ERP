@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #2563eb;
+  --brand-primary-dark: #1d4ed8;
+}
+
+/* Edge (and some Chromium builds) add their own built-in "reveal password"
+   eye icon inside password fields. We provide our own consistent eye-icon
+   toggle on every password field in the app, so the native one is hidden
+   here to avoid showing two overlapping icons in the same input. */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
